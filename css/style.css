@@ -1,0 +1,114 @@
+/* Vairaveis e Reset*/
+:root {
+    --cor-fonte: #000000;
+    --cor-subFonte: #474747;
+    --cor-card: #774821;
+    --cor-fundo: #eeeeee;
+    --cor-branco: #fff;
+    --cor-email: #bd2727;
+    --cor-github: #353535;
+    --cor-linkedin: #0e76a8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    background-color: var(--cor-card);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 7px rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagem e seu container */
+.image-container {
+    height: 135px;
+    border-radius: 50%;
+    padding: 30px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cor-branco);
+}
+
+/* As informações e links */
+.info {
+    background-color: var(--cor-branco);
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    width: 100%;
+    padding: 60px 25px 30px 25px;
+}
+
+.info p {
+    color: var(--cor-subFonte);
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+}
+
+.info nav {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+/* Deixando cada link com um modelo */
+.info nav a {
+    display: inline-block;
+    font-size: 1.7em;
+    color: var(--cor-branco);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    transition: 1s;
+}
+
+.info nav a:hover {
+    transform: scale(1.2);
+}
+
+
+/* Alterando apenas as cores de fundo do item */
+#github {
+    background-color: var(--cor-github);
+}
+
+#linkedin {
+    background-color: var(--cor-linkedin);
+}
+
+#email {
+    background-color: var(--cor-email);
+}
+
+/* RESPOSIVIDADES PARA TELAS MENORES */
+
+@media (max-width: 768px) {
+    .card {}
+}
